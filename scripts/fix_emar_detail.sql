@@ -1,0 +1,10 @@
+TRUNCATE mimiciv_hosp.emar_detail;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN prior_infusion_rate TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN infusion_rate TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN infusion_rate_adjustment TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN infusion_rate_adjustment_amount TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN product_amount_given TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN dose_due TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN dose_given TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN site TYPE TEXT;
+ALTER TABLE mimiciv_hosp.emar_detail ALTER COLUMN reason_for_no_barcode TYPE TEXT;
