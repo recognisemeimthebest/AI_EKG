@@ -12,12 +12,14 @@ MACHINE_MEAS_CSV = ECG_DATA_DIR / "machine_measurements.csv"
 OUTPUT_DIR = PROJECT_ROOT / "ml/data"
 
 # ======================== DB ========================
+import os
+
 DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "mimic4",
-    "user": "postgres",
-    "password": "tlsghktk6",
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "dbname": os.getenv("DB_NAME", "mimic4"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.environ["DB_PASSWORD"],
 }
 
 # ======================== ECG 파라미터 ========================

@@ -1,7 +1,7 @@
 #!/bin/bash
 # MIMIC-IV 3.1 Data Loader
 PSQL="/c/Program Files/PostgreSQL/16/bin/psql.exe"
-export PGPASSWORD=tlsghktk6
+export PGPASSWORD="${PGPASSWORD:?Set PGPASSWORD environment variable}"
 DB="mimic4"
 HOST="localhost"
 USER="postgres"
