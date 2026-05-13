@@ -22,6 +22,7 @@
 ## 노트 목록
 
 (최신순)
+- [CN-0004](CN-0004-morphology-3cls-classifier.md) — Morphology 3-class 분류기 채택: CNN-TCN+SupCon+LR, AUROC 0.957, RR-CV필터 제거, 5초 split, HK는 별도 모델로 분리
 - [CN-0003](CN-0003-paroxysmal-af-model-result.md) — 발작성 AF 감지 모델: ResNet-34+Clinical 채택(AUROC 0.8240), CNN-TCN TL 기각(0.68), 임계값 0.61 권장
 - [CN-0002](CN-0002-ai-feature-redesign.md) — AI 기능 재정의: 2종→3종 (부정맥분류+발작성AF감지+AFib예측개선), 근거 및 우선순위
 - [CN-0001](CN-0001-dev-infra-design.md) — 개발 인프라 설계: 에이전트+훅+스킬북+문서체계 구조 결정 근거
